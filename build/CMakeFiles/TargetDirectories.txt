@@ -1,0 +1,3 @@
+C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/build/CMakeFiles/SFMLTest.dir
+C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/build/CMakeFiles/edit_cache.dir
+C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/build/CMakeFiles/rebuild_cache.dir
