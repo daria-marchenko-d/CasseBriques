@@ -16,6 +16,7 @@ file(GLOB_RECURSE SOURCES "src/*.cpp")
 # Exécutable normal (pas WIN32)
 add_executable(SFMLTest ${SOURCES})
 
+
 # Lien SFML (dynamique)
 find_package(SFML 3 COMPONENTS System Window Graphics Audio Network REQUIRED)
 target_link_libraries(SFMLTest PRIVATE

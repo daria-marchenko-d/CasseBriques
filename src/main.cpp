@@ -1,26 +1,45 @@
 #include <SFML/Graphics.hpp>
 #include <optional>
 
-int main()
-{
-    sf::VideoMode mode({800u, 600u}); // utiliser un sf::Vector2u explicite
-    sf::RenderWindow window(mode, "SFML 3 Test");
+int main() {
+    sf:: Clock clock;
+    float deltaTime = 0.0f;
+    float playerVelocity;
 
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    // Speed
+    float playerSpeed = 400; 
 
-    while (window.isOpen())
-    {
-        while (auto event = window.pollEvent()) // std::optional<sf::Event>
-        {
+    sf::RenderWindow window(sf::VideoMode({910, 512}), "Casse Brique", sf::Style::Close);
+    // Player
+    sf::RectangleShape player(sf::Vector2f(125, 25));
+    player.setFillColor(sf::Color::Blue);
+    player.setPosition(sf::Vector2f(910/2-(player.getSize().x / 2), 512 - player.getSize().y - 10));
+    // Ball
+    // sf::CircleShape ball(sf::Vector2f(50, 50));
+    // ball.setFillColor(sf::Color::Red);
+    // ball.setPosition(sf::Vector2f(100, 100));
+    // Game loop
+
+    while (window.isOpen()) {
+        deltaTime = clock.restart().asSeconds();
+        if (auto event = window.pollEvent()) {
             if (event->is<sf::Event::Closed>())
                 window.close();
         }
 
-        window.clear();
-        window.draw(shape);
-        window.display();
+    playerVelocity = 0.0f;
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A)) {
+        playerVelocity = -playerSpeed * deltaTime;
+    }
+    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D)) {
+        playerVelocity = playerSpeed * deltaTime;
     }
 
-    return 0;
+    player.move(sf::Vector2f (playerVelocity, 0.0f));
+
+        window.clear();
+        window.draw(player); 
+        window.display();
+    }
 }
+
