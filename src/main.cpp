@@ -2,6 +2,14 @@
 #include <optional>
 #include <iostream>
 
+// Function to check FloatRects intersection
+bool intersects(const sf::FloatRect& a, const sf::FloatRect& b) {
+    return (a.position.x < b.position.x + b.size.x &&
+            a.position.x + a.size.x > b.position.x &&
+            a.position.y < b.position.y + b.size.y &&
+            a.position.y + a.size.y > b.position.y);
+}
+
 int main() {
     sf:: Clock clock;
     float deltaTime = 0.0f;
@@ -11,8 +19,8 @@ int main() {
     // Speed
     float playerSpeed = 400; 
     float ballSpeed = 300;
-
     sf::RenderWindow window(sf::VideoMode({910, 512}), "Casse Brique", sf::Style::Close);
+
     // Player
     sf::RectangleShape player(sf::Vector2f(125, 25));
     player.setFillColor(sf::Color::Blue);
@@ -24,7 +32,9 @@ int main() {
     ball.setFillColor(sf::Color::Green);
     ball.setPosition(sf::Vector2f(910/2 - (player.getSize().x / 2) + 50, 512 - player.getSize().y - 100));
     
-    
+    // Collision
+    sf::FloatRect nextPos;
+
     // Game loop
 
     while (window.isOpen()) {
@@ -42,6 +52,17 @@ int main() {
         playerVelocity = playerSpeed * deltaTime;
     }
 
+    sf::FloatRect ballBounds = ball.getGlobalBounds();
+    sf::FloatRect playerBounds = player.getGlobalBounds();
+
+    // Collision with player
+    nextPos = ballBounds;
+    nextPos.position.x += ballVelocity.x;
+
+    if (intersects(playerBounds, nextPos)) {
+        ballVelocity.y = -ballSpeed * deltaTime;
+    }
+
     // Ball sides collision
     // left side
     if (ball.getPosition().x <= 0.f) {
@@ -56,8 +77,9 @@ int main() {
         ballVelocity.y = ballSpeed * deltaTime;
     }
     // bottom side
-    else if (ball.getPosition().y > window.getSize().y> ball.getRadius()) {
+    else if (ball.getPosition().y +ball.getRadius()*2.f > window.getSize().y) {
         std::cout << "Game Over!" << std::endl;
+        ballVelocity = sf::Vector2f(0.f, 0.f);
     }
     // else {
     //     std::cout << "Error" << std::endl;
