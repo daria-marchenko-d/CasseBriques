@@ -230,6 +230,7 @@ CMakeFiles/SFMLTest.dir/src/main.cpp.obj: C:/Users/daria/Documents/2_anee/c++/br
   C:/Program\ Files/msys64/mingw64/include/c++/15.2.0/iomanip \
   C:/Program\ Files/msys64/mingw64/include/c++/15.2.0/ios \
   C:/Program\ Files/msys64/mingw64/include/c++/15.2.0/iosfwd \
+  C:/Program\ Files/msys64/mingw64/include/c++/15.2.0/iostream \
   C:/Program\ Files/msys64/mingw64/include/c++/15.2.0/istream \
   C:/Program\ Files/msys64/mingw64/include/c++/15.2.0/iterator \
   C:/Program\ Files/msys64/mingw64/include/c++/15.2.0/limits \
@@ -374,6 +375,8 @@ C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/src/Canon.cpp:
 C:/Program\ Files/msys64/mingw64/include/c++/15.2.0/bits/refwrap.h:
 
 C:/Program\ Files/msys64/mingw64/include/SFML/Config.hpp:
+
+C:/Program\ Files/msys64/mingw64/include/c++/15.2.0/iostream:
 
 C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/src/Collision.cpp:
 

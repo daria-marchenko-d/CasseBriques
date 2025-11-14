@@ -288,4 +288,5 @@ CMakeFiles/SFMLTest.dir/src/main.cpp.obj: \
  C:/Program\ Files/msys64/mingw64/include/SFML/System/FileInputStream.hpp \
  C:/Program\ Files/msys64/mingw64/include/SFML/System/InputStream.hpp \
  C:/Program\ Files/msys64/mingw64/include/SFML/System/MemoryInputStream.hpp \
- C:/Program\ Files/msys64/mingw64/include/SFML/System/Sleep.hpp
+ C:/Program\ Files/msys64/mingw64/include/SFML/System/Sleep.hpp \
+ C:/Program\ Files/msys64/mingw64/include/c++/15.2.0/iostream
