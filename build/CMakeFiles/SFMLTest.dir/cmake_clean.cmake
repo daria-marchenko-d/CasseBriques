@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SFMLTest.dir/src/Canon.cpp.obj.d"
   "CMakeFiles/SFMLTest.dir/src/Collision.cpp.obj"
   "CMakeFiles/SFMLTest.dir/src/Collision.cpp.obj.d"
+  "CMakeFiles/SFMLTest.dir/src/Game.cpp.obj"
+  "CMakeFiles/SFMLTest.dir/src/Game.cpp.obj.d"
   "CMakeFiles/SFMLTest.dir/src/GameObject.cpp.obj"
   "CMakeFiles/SFMLTest.dir/src/GameObject.cpp.obj.d"
   "CMakeFiles/SFMLTest.dir/src/HUD.cpp.obj"

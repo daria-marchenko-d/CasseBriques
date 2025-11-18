@@ -1,5 +1,5 @@
-CMakeFiles/SFMLTest.dir/src/main.cpp.obj: \
- C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\src\main.cpp \
+CMakeFiles/SFMLTest.dir/src/Game.cpp.obj: \
+ C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\src\Game.cpp \
  C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/include/Game.hpp \
  C:/Program\ Files/msys64/mingw64/include/SFML/Graphics.hpp \
  C:/Program\ Files/msys64/mingw64/include/SFML/Graphics/BlendMode.hpp \
@@ -291,4 +291,6 @@ CMakeFiles/SFMLTest.dir/src/main.cpp.obj: \
  C:/Program\ Files/msys64/mingw64/include/SFML/System/MemoryInputStream.hpp \
  C:/Program\ Files/msys64/mingw64/include/SFML/System/Sleep.hpp \
  C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/include/Canon.hpp \
- C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/include/Ball.hpp
+ C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/include/Ball.hpp \
+ C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/include/Collision.hpp \
+ C:/Program\ Files/msys64/mingw64/include/c++/15.2.0/iostream

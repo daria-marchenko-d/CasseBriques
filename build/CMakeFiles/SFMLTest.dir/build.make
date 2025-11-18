@@ -146,11 +146,26 @@ CMakeFiles/SFMLTest.dir/src/Collision.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SFMLTest.dir/src/Collision.cpp.s"
 	c:\PROGRA~1\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\src\Collision.cpp -o CMakeFiles\SFMLTest.dir\src\Collision.cpp.s
 
+CMakeFiles/SFMLTest.dir/src/Game.cpp.obj: CMakeFiles/SFMLTest.dir/flags.make
+CMakeFiles/SFMLTest.dir/src/Game.cpp.obj: CMakeFiles/SFMLTest.dir/includes_CXX.rsp
+CMakeFiles/SFMLTest.dir/src/Game.cpp.obj: C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/src/Game.cpp
+CMakeFiles/SFMLTest.dir/src/Game.cpp.obj: CMakeFiles/SFMLTest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SFMLTest.dir/src/Game.cpp.obj"
+	c:\PROGRA~1\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFMLTest.dir/src/Game.cpp.obj -MF CMakeFiles\SFMLTest.dir\src\Game.cpp.obj.d -o CMakeFiles\SFMLTest.dir\src\Game.cpp.obj -c C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\src\Game.cpp
+
+CMakeFiles/SFMLTest.dir/src/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SFMLTest.dir/src/Game.cpp.i"
+	c:\PROGRA~1\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\src\Game.cpp > CMakeFiles\SFMLTest.dir\src\Game.cpp.i
+
+CMakeFiles/SFMLTest.dir/src/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SFMLTest.dir/src/Game.cpp.s"
+	c:\PROGRA~1\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\src\Game.cpp -o CMakeFiles\SFMLTest.dir\src\Game.cpp.s
+
 CMakeFiles/SFMLTest.dir/src/GameObject.cpp.obj: CMakeFiles/SFMLTest.dir/flags.make
 CMakeFiles/SFMLTest.dir/src/GameObject.cpp.obj: CMakeFiles/SFMLTest.dir/includes_CXX.rsp
 CMakeFiles/SFMLTest.dir/src/GameObject.cpp.obj: C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/src/GameObject.cpp
 CMakeFiles/SFMLTest.dir/src/GameObject.cpp.obj: CMakeFiles/SFMLTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SFMLTest.dir/src/GameObject.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SFMLTest.dir/src/GameObject.cpp.obj"
 	c:\PROGRA~1\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFMLTest.dir/src/GameObject.cpp.obj -MF CMakeFiles\SFMLTest.dir\src\GameObject.cpp.obj.d -o CMakeFiles\SFMLTest.dir\src\GameObject.cpp.obj -c C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\src\GameObject.cpp
 
 CMakeFiles/SFMLTest.dir/src/GameObject.cpp.i: cmake_force
@@ -165,7 +180,7 @@ CMakeFiles/SFMLTest.dir/src/HUD.cpp.obj: CMakeFiles/SFMLTest.dir/flags.make
 CMakeFiles/SFMLTest.dir/src/HUD.cpp.obj: CMakeFiles/SFMLTest.dir/includes_CXX.rsp
 CMakeFiles/SFMLTest.dir/src/HUD.cpp.obj: C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/src/HUD.cpp
 CMakeFiles/SFMLTest.dir/src/HUD.cpp.obj: CMakeFiles/SFMLTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SFMLTest.dir/src/HUD.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SFMLTest.dir/src/HUD.cpp.obj"
 	c:\PROGRA~1\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFMLTest.dir/src/HUD.cpp.obj -MF CMakeFiles\SFMLTest.dir\src\HUD.cpp.obj.d -o CMakeFiles\SFMLTest.dir\src\HUD.cpp.obj -c C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\src\HUD.cpp
 
 CMakeFiles/SFMLTest.dir/src/HUD.cpp.i: cmake_force
@@ -180,7 +195,7 @@ CMakeFiles/SFMLTest.dir/src/InputManager.cpp.obj: CMakeFiles/SFMLTest.dir/flags.
 CMakeFiles/SFMLTest.dir/src/InputManager.cpp.obj: CMakeFiles/SFMLTest.dir/includes_CXX.rsp
 CMakeFiles/SFMLTest.dir/src/InputManager.cpp.obj: C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/src/InputManager.cpp
 CMakeFiles/SFMLTest.dir/src/InputManager.cpp.obj: CMakeFiles/SFMLTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SFMLTest.dir/src/InputManager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SFMLTest.dir/src/InputManager.cpp.obj"
 	c:\PROGRA~1\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFMLTest.dir/src/InputManager.cpp.obj -MF CMakeFiles\SFMLTest.dir\src\InputManager.cpp.obj.d -o CMakeFiles\SFMLTest.dir\src\InputManager.cpp.obj -c C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\src\InputManager.cpp
 
 CMakeFiles/SFMLTest.dir/src/InputManager.cpp.i: cmake_force
@@ -195,7 +210,7 @@ CMakeFiles/SFMLTest.dir/src/LevelManager.cpp.obj: CMakeFiles/SFMLTest.dir/flags.
 CMakeFiles/SFMLTest.dir/src/LevelManager.cpp.obj: CMakeFiles/SFMLTest.dir/includes_CXX.rsp
 CMakeFiles/SFMLTest.dir/src/LevelManager.cpp.obj: C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/src/LevelManager.cpp
 CMakeFiles/SFMLTest.dir/src/LevelManager.cpp.obj: CMakeFiles/SFMLTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SFMLTest.dir/src/LevelManager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SFMLTest.dir/src/LevelManager.cpp.obj"
 	c:\PROGRA~1\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFMLTest.dir/src/LevelManager.cpp.obj -MF CMakeFiles\SFMLTest.dir\src\LevelManager.cpp.obj.d -o CMakeFiles\SFMLTest.dir\src\LevelManager.cpp.obj -c C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\src\LevelManager.cpp
 
 CMakeFiles/SFMLTest.dir/src/LevelManager.cpp.i: cmake_force
@@ -210,7 +225,7 @@ CMakeFiles/SFMLTest.dir/src/main.cpp.obj: CMakeFiles/SFMLTest.dir/flags.make
 CMakeFiles/SFMLTest.dir/src/main.cpp.obj: CMakeFiles/SFMLTest.dir/includes_CXX.rsp
 CMakeFiles/SFMLTest.dir/src/main.cpp.obj: C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/src/main.cpp
 CMakeFiles/SFMLTest.dir/src/main.cpp.obj: CMakeFiles/SFMLTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SFMLTest.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SFMLTest.dir/src/main.cpp.obj"
 	c:\PROGRA~1\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFMLTest.dir/src/main.cpp.obj -MF CMakeFiles\SFMLTest.dir\src\main.cpp.obj.d -o CMakeFiles\SFMLTest.dir\src\main.cpp.obj -c C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\src\main.cpp
 
 CMakeFiles/SFMLTest.dir/src/main.cpp.i: cmake_force
@@ -228,6 +243,7 @@ SFMLTest_OBJECTS = \
 "CMakeFiles/SFMLTest.dir/src/Brick.cpp.obj" \
 "CMakeFiles/SFMLTest.dir/src/Canon.cpp.obj" \
 "CMakeFiles/SFMLTest.dir/src/Collision.cpp.obj" \
+"CMakeFiles/SFMLTest.dir/src/Game.cpp.obj" \
 "CMakeFiles/SFMLTest.dir/src/GameObject.cpp.obj" \
 "CMakeFiles/SFMLTest.dir/src/HUD.cpp.obj" \
 "CMakeFiles/SFMLTest.dir/src/InputManager.cpp.obj" \
@@ -242,6 +258,7 @@ SFMLTest.exe: CMakeFiles/SFMLTest.dir/src/Ball.cpp.obj
 SFMLTest.exe: CMakeFiles/SFMLTest.dir/src/Brick.cpp.obj
 SFMLTest.exe: CMakeFiles/SFMLTest.dir/src/Canon.cpp.obj
 SFMLTest.exe: CMakeFiles/SFMLTest.dir/src/Collision.cpp.obj
+SFMLTest.exe: CMakeFiles/SFMLTest.dir/src/Game.cpp.obj
 SFMLTest.exe: CMakeFiles/SFMLTest.dir/src/GameObject.cpp.obj
 SFMLTest.exe: CMakeFiles/SFMLTest.dir/src/HUD.cpp.obj
 SFMLTest.exe: CMakeFiles/SFMLTest.dir/src/InputManager.cpp.obj
@@ -251,7 +268,7 @@ SFMLTest.exe: CMakeFiles/SFMLTest.dir/build.make
 SFMLTest.exe: CMakeFiles/SFMLTest.dir/linkLibs.rsp
 SFMLTest.exe: CMakeFiles/SFMLTest.dir/objects1.rsp
 SFMLTest.exe: CMakeFiles/SFMLTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable SFMLTest.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\daria\Documents\2_anee\c++\brickbreaker\CasseBriques\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable SFMLTest.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SFMLTest.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/src/Brick.cpp" "CMakeFiles/SFMLTest.dir/src/Brick.cpp.obj" "gcc" "CMakeFiles/SFMLTest.dir/src/Brick.cpp.obj.d"
   "C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/src/Canon.cpp" "CMakeFiles/SFMLTest.dir/src/Canon.cpp.obj" "gcc" "CMakeFiles/SFMLTest.dir/src/Canon.cpp.obj.d"
   "C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/src/Collision.cpp" "CMakeFiles/SFMLTest.dir/src/Collision.cpp.obj" "gcc" "CMakeFiles/SFMLTest.dir/src/Collision.cpp.obj.d"
+  "C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/src/Game.cpp" "CMakeFiles/SFMLTest.dir/src/Game.cpp.obj" "gcc" "CMakeFiles/SFMLTest.dir/src/Game.cpp.obj.d"
   "C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/src/GameObject.cpp" "CMakeFiles/SFMLTest.dir/src/GameObject.cpp.obj" "gcc" "CMakeFiles/SFMLTest.dir/src/GameObject.cpp.obj.d"
   "C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/src/HUD.cpp" "CMakeFiles/SFMLTest.dir/src/HUD.cpp.obj" "gcc" "CMakeFiles/SFMLTest.dir/src/HUD.cpp.obj.d"
   "C:/Users/daria/Documents/2_anee/c++/brickbreaker/CasseBriques/src/InputManager.cpp" "CMakeFiles/SFMLTest.dir/src/InputManager.cpp.obj" "gcc" "CMakeFiles/SFMLTest.dir/src/InputManager.cpp.obj.d"
