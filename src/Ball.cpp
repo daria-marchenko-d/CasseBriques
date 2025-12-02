@@ -5,7 +5,7 @@ using namespace std;
 using namespace sf;
 
 constexpr float ballRadius{10.f}, ballVelocity{8.f};
-struct Ball 
+struct Ball
 {
     CircleShape shape;
 
