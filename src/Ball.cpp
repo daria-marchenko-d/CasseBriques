@@ -9,6 +9,11 @@ Ball::Ball() {
     ballSpeed = 300.f;
     ballVelocity = sf::Vector2f(-0.08f, -0.08f);
 }
+constexpr float ballRadius{10.f}, ballVelocity{8.f};
+struct Ball
+{
+    sf::CircleShape shape;
+    sf::Vector2f ballVelocity;
 
 void Ball::update(float dt, const sf::RenderWindow& window) {
     shape.move(ballVelocity);
@@ -45,7 +50,6 @@ void Ball::setVelocity(sf::Vector2f vel) {
     ballVelocity = vel;
 }
 
-float Ball::getSpeed() const {   
+float Ball::getSpeed() const {
     return ballSpeed;
 }
-

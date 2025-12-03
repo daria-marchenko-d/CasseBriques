@@ -17,7 +17,7 @@
 //     sf::Vector2 ballVelocity(-0.08f, -0.08f);
 
 //     // Speed
-//     float playerSpeed = 400; 
+//     float playerSpeed = 400;
 //     float ballSpeed = 300;
 //     sf::RenderWindow window(sf::VideoMode({910, 512}), "Casse Brique", sf::Style::Close);
 
@@ -98,7 +98,7 @@
 
 //         window.clear();
 //         window.draw(player);
-//         window.draw(ball); 
+//         window.draw(ball);
 //         window.display();
 //     }
 // }

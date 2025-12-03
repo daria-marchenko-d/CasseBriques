@@ -20,4 +20,3 @@ private:
     void render();
     void handleCollisions(float dt);
 };
-

@@ -3,9 +3,8 @@
 
 class Ball {
 private:
-    sf::CircleShape shape;
+    // sf::CircleShape shape;
     sf::Vector2f ballVelocity;
-    float ballSpeed;
 
 public:
     Ball();
@@ -19,6 +18,8 @@ public:
     void setVelocity(sf::Vector2f vel);
     
     float getSpeed() const;
+    float ballSpeed;
+
 };
 
 

@@ -1,4 +1,4 @@
- #include "Canon.hpp"
+#include "Canon.hpp"
 
 Canon::Canon() {
     shape.setSize(sf::Vector2f(125, 25));
