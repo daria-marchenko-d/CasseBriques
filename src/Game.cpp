@@ -38,7 +38,7 @@ void Game::handleCollisions(float dt) {
 
     if (Collision::intersects(playerBounds, nextPos)) {
         sf::Vector2f vel = ball.getVelocity();
-        vel.y = -ball.getSpeed() * dt; 
+        vel.y = -ball.getSpeed() * dt;
         ball.setVelocity(vel);
     }
 }
@@ -49,3 +49,4 @@ void Game::render() {
     window.draw(ball.getShape());
     window.display();
 }
+
