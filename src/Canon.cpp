@@ -2,7 +2,7 @@
 
 Canon::Canon() {
     shape.setSize(sf::Vector2f(125, 25));
-    shape.setFillColor(sf::Color::Blue);
+    shape.setFillColor(sf::Color::Red);
     shape.setPosition(sf::Vector2f(910/2 - (shape.getSize().x / 2), 512 - shape.getSize().y - 10));
 
     playerSpeed = 400.f;

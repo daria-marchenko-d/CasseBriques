@@ -1,7 +1,9 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include <vector>
 #include "Canon.hpp"
 #include "Ball.hpp"
+#include "Brick.hpp"
 
 class Game {
 private:
@@ -10,6 +12,7 @@ private:
 
     Canon player;
     Ball ball;
+    std::vector<Brick> bricks;
 
 public:
     Game();
@@ -19,4 +22,6 @@ private:
     void update(float dt);
     void render();
     void handleCollisions(float dt);
+    void handleBrickCollisions(float dt);
+    
 };

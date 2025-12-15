@@ -1,14 +1,31 @@
 #include "Brick.hpp"
 
-void createbrick(std::vector<sf::RectangleShape>& briques)
+void createbrick(std::vector<Brick>& briques)
 {
-    for (int i = 0; i < 10; i++)
-    {
-        sf::RectangleShape b;
-        b.setSize({60.f, 20.f});
-        b.setFillColor(sf::Color::White);
-        b.setPosition({20.f + i * 60.f, 20.f});
+    const int columns = 10;
+    const int rows    = 5;
 
-        briques.push_back(b);
+    const float brickWidth  = 60.f;
+    const float brickHeight = 20.f;
+    const float spacingX    = 5.f;
+    const float spacingY    = 10.f;
+
+    const float startX = 20.f;
+    const float startY = 20.f;
+
+    for (int row = 0; row < rows; row++)
+    {
+        for (int col = 0; col < columns; col++)
+        {
+            sf::RectangleShape b;
+            b.setSize({brickWidth, brickHeight});
+
+            float x = startX + col * (brickWidth + spacingX);
+            float y = startY + row * (brickHeight + spacingY);
+briques.emplace_back(x, y);
+            // b.setPosition({ x, y });  // <-- correct
+
+            // briques.emplace_back(b);
+        }
     }
 }

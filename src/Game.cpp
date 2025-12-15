@@ -1,15 +1,19 @@
 #include "Game.hpp"
+#include "Brick.hpp"
 #include "Collision.hpp"
 #include <iostream>
+#include <vector>
+
 
 Game::Game()
     : window(sf::VideoMode({910, 512}), "Casse Brique", sf::Style::Close)
 {
+    createbrick(bricks);
 }
+
 
 void Game::run() {
     while (window.isOpen()) {
-
         float dt = clock.restart().asSeconds();
 
         if (auto event = window.pollEvent()) {
@@ -23,14 +27,32 @@ void Game::run() {
     }
 }
 
-void Game::update(float dt) {
+void Game::update(float dt)
+{
     player.update(dt, window);
     ball.update(dt, window);
 
     handleCollisions(dt);
+    handleBrickCollisions(dt);
 }
 
-void Game::handleCollisions(float dt) {
+void Game::handleBrickCollisions(float dt)
+{
+    for (auto& brick : bricks)
+    {
+        if (!brick.destroyed &&
+            ball.getShape().getGlobalBounds().findIntersection(brick.shape.getGlobalBounds()))
+        {
+            auto vel = ball.getVelocity();
+            vel.y = -vel.y;
+            ball.setVelocity(vel);
+
+            brick.destroyed = true;
+            break;
+        }
+    }
+
+
     sf::FloatRect ballBounds = ball.getBounds();
     sf::FloatRect playerBounds = player.getBounds();
 
@@ -46,9 +68,24 @@ void Game::handleCollisions(float dt) {
     }
 }
 
-void Game::render() {
+void Game::handleCollisions(float dt)
+{
+    // Pour l’instant, rien à faire
+}
+
+
+void Game::render()
+{
     window.clear();
+
     window.draw(player.getShape());
     window.draw(ball.getShape());
+
+    for (auto& brick : bricks)
+    {
+        if (!brick.destroyed)
+            window.draw(brick.shape);
+    }
+
     window.display();
-};
+}
