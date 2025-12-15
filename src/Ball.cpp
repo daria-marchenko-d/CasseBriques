@@ -2,54 +2,38 @@
 #include <iostream>
 
 Ball::Ball() {
-    shape.setRadius(10);
+    shape.setRadius(10.f);
     shape.setFillColor(sf::Color::Green);
-    shape.setPosition(sf::Vector2f(910/2 - 62.5f, 512 - 125.f));
+    shape.setPosition({910.f/2.f, 512.f - 50.f});
 
-    ballSpeed = 300.f;
-    ballVelocity = sf::Vector2f(-0.08f, -0.08f);
+    speed = 300.f;
+    velocity = sf::Vector2f(-150.f, -150.f);
 }
-constexpr float ballRadius{10.f}, ballVelocity{8.f};
-struct Ball
-{
-    sf::CircleShape shape;
-    sf::Vector2f ballVelocity;
 
 void Ball::update(float dt, const sf::RenderWindow& window) {
-    shape.move(ballVelocity);
+    shape.move(velocity * dt);
 
-    if (shape.getPosition().x <= 0.f) {
-        ballVelocity.x = ballSpeed * dt;
+    if (shape.getPosition().x <= 0.f)
+        velocity.x = std::abs(velocity.x);
+
+    if (shape.getPosition().x + shape.getRadius()*2.f >= window.getSize().x)
+        velocity.x = -std::abs(velocity.x);
+
+    if (shape.getPosition().y <= 0.f)
+        velocity.y = std::abs(velocity.y);
+
+    if (shape.getPosition().y + shape.getRadius()*2.f >= window.getSize().y) {
+        std::cout << "Game Over!\n";
+        velocity = {0.f, 0.f};
     }
-    else if (shape.getPosition().x > window.getSize().x - shape.getRadius()) {
-        ballVelocity.x = -ballSpeed * dt;
-    }
-
-    if (shape.getPosition().y < 0.f) {
-        ballVelocity.y = ballSpeed * dt;
-    }
-    else if (shape.getPosition().y + shape.getRadius() * 2.f > window.getSize().y) {
-        std::cout << "Game Over!" << std::endl;
-        ballVelocity = sf::Vector2f(0.f, 0.f);
-    }
 }
 
-sf::CircleShape& Ball::getShape() {
-    return shape;
-}
+sf::CircleShape& Ball::getShape() { return shape; }
 
-sf::FloatRect Ball::getBounds() const {
-    return shape.getGlobalBounds();
-}
+sf::FloatRect Ball::getBounds() const { return shape.getGlobalBounds(); }
 
-sf::Vector2f& Ball::getVelocity() {
-    return ballVelocity;
-}
+sf::Vector2f& Ball::getVelocity() { return velocity; }
 
-void Ball::setVelocity(sf::Vector2f vel) {
-    ballVelocity = vel;
-}
+void Ball::setVelocity(const sf::Vector2f& vel) { velocity = vel; }
 
-float Ball::getSpeed() const {
-    return ballSpeed;
-}
+float Ball::getSpeed() const { return speed; }

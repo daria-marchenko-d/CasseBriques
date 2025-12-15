@@ -4,7 +4,8 @@
 
 Game::Game()
     : window(sf::VideoMode({910, 512}), "Casse Brique", sf::Style::Close)
-{}
+{
+}
 
 void Game::run() {
     while (window.isOpen()) {
@@ -34,11 +35,13 @@ void Game::handleCollisions(float dt) {
     sf::FloatRect playerBounds = player.getBounds();
 
     sf::FloatRect nextPos = ballBounds;
-    nextPos.position.x += ball.getVelocity().x;
 
-    if (Collision::intersects(playerBounds, nextPos)) {
+    // SFML 3 : position.x remplace left
+    nextPos.position.x += ball.getVelocity().x * dt;
+
+    if (playerBounds.findIntersection(nextPos)) {
         sf::Vector2f vel = ball.getVelocity();
-        vel.y = -ball.getSpeed() * dt;
+        vel.y = -std::abs(vel.y);
         ball.setVelocity(vel);
     }
 }
@@ -48,5 +51,4 @@ void Game::render() {
     window.draw(player.getShape());
     window.draw(ball.getShape());
     window.display();
-}
-
+};
