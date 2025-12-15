@@ -232,39 +232,74 @@ Tests finaux et documentation : réaliser des tests complets du projet et rédig
 ## Files tree
 
 /project_root
+
 │
+
 ├── /include                     # Header files (.hpp)
+
 │   ├── GameObject.hpp          # Base class declarations (position, size, collision zone)
+
 │   ├── Canon.hpp               # Cannon class declaration (aiming, shooting)
+
 │   ├── Ball.hpp                # Ball class declaration (movement, collisions)
+
 │   ├── Brick.hpp               # Brick class declaration (health, visuals)
+
 │   ├── InputManager.hpp        # Input handling (keyboard/mouse events)
+
 │   ├── AssetManager.hpp        # Resource manager singleton (textures, sounds)
+
 │   ├── LevelManager.hpp        # Level loading and management
+
 │   ├── Collision.hpp           # Collision detection functions (circle vs AABB)
+
 │   └── HUD.hpp                 # Optional UI elements (score, lives display)
+
 │
+
 ├── /src                        # Source files (.cpp)
+
 │   ├── GameObject.cpp          # Base class implementations
+
 │   ├── Canon.cpp               # Cannon logic
+
 │   ├── Ball.cpp                # Ball behavior implementation
+
 │   ├── Brick.cpp               # Brick damage and rendering
+
 │   ├── InputManager.cpp        # Keyboard and mouse input processing
+
 │   ├── AssetManager.cpp        # Resource loading and caching
+
 │   ├── LevelManager.cpp        # Parsing and spawning levels
+
 │   ├── Collision.cpp           # Collision checks implementation
+
 │   └── HUD.cpp                 # UI rendering
+
 │
+
 ├── main.cpp                    # Application entry point, main game loop
+
 │
+
 ├── /assets                     # Game assets: sprites, fonts, sounds
+
 │   ├── textures/
+
 │   ├── fonts/
+
 │   └── sounds/
+
 │
+
 ├── /levels                     # Level data files (text, JSON)
+
 │   └── level1.txt
+
 │
+
 ├── README.md                   # Project overview and build instructions
+
 ├── CMakeLists.txt or Makefile # Build system configuration
 
