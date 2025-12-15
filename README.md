@@ -36,22 +36,29 @@ project implementation plan
 
 #### Work Phases 
 Phase 1: Preparation and Basic Architecture (1-1.5 days)
+
 Setting up development environment.
 Creating UML diagrams.
 Initializing main game loop.
 Implementing base classes (GameObject, InputManager).
+
 Phase 2: Core Game Mechanics (1.5-2 days)
+
 Implementation of cannon, ball, bricks.
 Introduction of shooting and shockwave.
 Development of descending wall — key challenge element.
 Handling collisions.
 Gameplay tuning.
+
 Phase 3: Extension and Optimization (1-2 days)
+
 Implementation of resource and level managers.
 Multi-ball support.
 Adding UI.
 Code optimization and refactoring.
+
 Phase 4: Testing and Finalization (0.5-1 day)
+
 Comprehensive mechanics testing.
 Bug fixing.
 Project documentation.
@@ -59,33 +66,45 @@ Project documentation.
 
 #### Basic Development
 Stage 1: Environment and Project Setup
+
 Install SFML and configure the IDE for development.
 Create directory structure separating header files and source files.
 Develop UML diagrams for main classes (GameObject, Canon, Ball, Brick, InputManager).
 Initialize the SFML window and launch the main game loop.
+
 Stage 2: Implementation of Base Classes and Movement Mechanics
+
 GameObject: implement fields for position, size, and collision area.
 InputManager: listen and handle keyboard and mouse events.
 Implement rendering of basic primitives (circle for the ball, rectangles for the cannon and bricks).
 Logic for the cannon to follow the mouse cursor.
 Ball movement and bouncing off walls, platform, and bricks.
+
 Stage 3: Implementation of Game Mechanics and Collisions
+
 Create Brick class with health, color change on damage, and deletion after destruction.
 Implement collision detection between ball and bricks/platform.
 Logic for reducing bricks' health and updating their visual state.
+
 Stage 4: Shooting and Shockwave Mechanic
+
 User interaction: left click launches ball from the cannon.
 Handle restriction of only one active ball at a time.
 Right click initiates shockwave that pushes balls away.
 Account for shockwave effects on other objects.
+
 Stage 5: Implementation of Descending Wall
+
 Create an object representing the wall descending slowly from the top down.
 Loss condition if wall reaches platform area.
 Adjust wall movement speed depending on game state.
 Integrate with main game loop.
+
 Stage 6: Testing Basic Mechanics
+
 Thorough testing of movements, collisions, shooting, and descending wall dynamics.
 Identification and bug fixing.
+
 #### Additional Tasks
 AssetManager: implement resource manager for loading and caching textures and sounds.
 LevelManager: create level manager that reads configurations from files and generates game field.
@@ -134,21 +153,28 @@ Interface graphique affichant les points de vie des briques et le score.
 
 #### Phases de travail
 Phase 1 : Préparation et architecture de base (1-1,5 jour)
+
 Installation de l'environnement de développement.
 Création des diagrammes UML.
 Initialisation de la boucle principale de jeu.
 Implémentation des classes de base (GameObject, InputManager).
+
 Phase 2 : Mécaniques principales de jeu (1,5-2 jours)
+
 Implémentation du canon, de la balle et des briques.
 Mise en place du tir et de l'onde de choc.
 Développement du mur descendant, élément clé de difficulté.
 Gestion des collisions et ajustements du gameplay.
+
 Phase 3 : Extension et optimisation (1-2 jours)
+
 Mise en place des gestionnaires de ressources et de niveaux.
 Support multi-balles.
 Amélioration de l’UI.
 Optimisation et refactoring du code.
+
 Phase 4 : Test et finalisation (0,5-1 jour)
+
 Tests approfondis.
 Correction des bugs.
 Documentation du projet.
